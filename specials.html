@@ -52,11 +52,52 @@
                 </ul>
             </div>
         </nav>
-        
+
         <header class="jumbotron my-4">
             <h1 class="display-3">Splatoon 2 Special Weapons</h1>
             <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum.</p>
         </header>
+
+        <section>
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-12">
+                        <table class="table table-responsive" id="specialstable">
+                            <thead class="thead-default">
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Image</th>
+                                    <th>Description</th>
+                                    <th>Stats</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Tenta Missles</th>
+                                    <td><img src="images/specials/Wsp_SuperMissile.png"></td>
+                                    <td>When activated, the Inkling can lock onto an opponent using ZR and fire four homing missiles towards them.</td>
+                                    <td>
+                                        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#tentacollapse" aria-expanded="false" aria-controls="tentacollapse">
+                                            Click for details
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr id="tentacollapse" class="collapse out">
+                                    <td colspan="4">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col">Min Splash Damage: 30</div>
+                                                <div class="col">Direct Hit Damage: 150</div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>                               
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <script src="js/jquery-3.2.1.min.js"></script>
         <script src="js/popper.min.js"></script>

@@ -52,11 +52,54 @@
                 </ul>
             </div>
         </nav>
-        
+
         <header class="jumbotron my-4">
             <h1 class="display-3">Splatoon 2 Sub Weapons</h1>
             <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum.</p>
         </header>
+
+        <section>
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-12">
+                        <table class="table table-responsive" id="substable">
+                            <thead class="thead-default">
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Image</th>
+                                    <th>Description</th>
+                                    <th>Stats</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Burst Bomb</th>
+                                    <td><img src="images/subs/Wsb_Bomb_Quick.png"></td>
+                                    <td>Burst Bombs are spherical balloons filled with ink that explode on contact. They use less ink than Splat Bombs, and Suction Bombs, and therefore cause less damage.</td>
+                                    <td>
+                                        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#burstcollapse" aria-expanded="false" aria-controls="burstcollapse">
+                                            Click for details
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr id="burstcollapse" class="collapse out">
+                                    <td colspan="4">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col">Min Splash Damage: 25</div>
+                                                <div class="col">Splash Damage: 35</div>
+                                                <div class="col">Direct Hit Damage: 60</div>
+                                                <div class="col">Ink Consumption: 40%</div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <script src="js/jquery-3.2.1.min.js"></script>
         <script src="js/popper.min.js"></script>
