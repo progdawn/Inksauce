@@ -8,3 +8,14 @@
         transform: translateY(-50%)
     }
 }
+.btn-primary:before {
+
+   content:'Click for details'
+
+}
+
+.btn-primary[aria-expanded="true"]:before {
+
+    content:'Close Details';
+
+}

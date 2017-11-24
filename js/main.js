@@ -2,7 +2,7 @@ $('.carousel').carousel({
     interval: 2000
 })
 
-$(document).ready(function(){
+$(document).ready(function (){
     $('#brandstable').DataTable({
         "responsive": true,
         "paging":   false,
@@ -13,7 +13,7 @@ $(document).ready(function(){
     });
 });
 
-$(document).ready(function(){
+$(document).ready(function (){
     $('#abilitiestable').DataTable({
         "responsive": true,
         "paging":   false,
@@ -24,7 +24,7 @@ $(document).ready(function(){
     });
 });
 
-$(document).ready(function(){
+$(document).ready(function (){
     $('.tab-pane table').DataTable({
         "responsive": true,
         "paging":   false,
@@ -39,5 +39,3 @@ $(document).ready(function(){
             .responsive.recalc();
     }); 
 });
-
-
