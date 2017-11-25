@@ -39,3 +39,14 @@ $(document).ready(function (){
             .responsive.recalc();
     }); 
 });
+
+$('.grid').masonry({
+  // options...
+  itemSelector: '.grid-item',
+  columnWidth: 200
+});
+
+// layout Masonry after each image loads
+$grid.imagesLoaded().progress( function() {
+  $grid.masonry();
+});  
