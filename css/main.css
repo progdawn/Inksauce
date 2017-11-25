@@ -8,11 +8,18 @@
         transform: translateY(-50%)
     }
 }
-.btn-primary:before {
+#specialstable .btn-primary:before {
    content:'Click for details'
 }
 
-.btn-primary[aria-expanded="true"]:before {
+#specialstable .btn-primary[aria-expanded="true"]:before {
+    content:'Close Details';
+}
+#substable .btn-primary:before {
+   content:'Click for details'
+}
+
+#substable .btn-primary[aria-expanded="true"]:before {
     content:'Close Details';
 }
 .grid {
