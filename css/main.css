@@ -1,3 +1,4 @@
+/* Fixes carousel size on large screens */
 @media (min-width: 992px) {
     .carousel-item {
         height: 25em;
@@ -9,45 +10,47 @@
     }
 }
 
-#gear-jumbotron, #gear-blur{
+/* Sets background image for jumbotron */
+#gear-jumbotron.jumbotron{
     background: url("../images/other/gear-1.jpg")
-        center center;
-    background-size: cover;   
-}
-.blur-container {
-    position: relative;
-}
-#gear-blur {
-    position: absolute;
-    transform: scaleX(1.06);
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    z-index: 99;
-    filter: blur(2px);
-}
-.header-container {
-    position: relative;
-    z-index: 100;
-    background: rgba(34,34,34,0.75);
-    color: white;
+            center center;
+    background-size: cover;
 }
 
+/* Fixed background image position on large screens */
+/* Why the hell are my wildcard selectors not working? */
+@media (min-width: 992px) {
+    header#gear-jumbotron.jumbotron{        
+        background-position: 50% 30%;
+    }
+}
+
+/* Sets jumbotron color and stroke */
+/* Not sure why increasing font size makes the jumbotron larger */
+.jumbotron h1{
+    color: #FFFFFF;
+    text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000;
+}
+.jumbotron p{
+    color: #FFFFFF;
+    text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000;
+}
+
+/* Sets button text when clicked. Should combine these later */
 #specials-table .btn-primary:before {
     content:'Click for details'
 }
-
 #specials-table .btn-primary[aria-expanded="true"]:before {
     content:'Close Details';
 }
 #subs-table .btn-primary:before {
     content:'Click for details'
 }
-
 #subs-table .btn-primary[aria-expanded="true"]:before {
     content:'Close Details';
 }
+
+/* Used for Masonry */
 .grid {
     background: #DDD;
 }
@@ -67,6 +70,8 @@
     display: block;
     max-width: 100%;
 }
+
+/* I forgot why this is here ¯\_(ツ)_/¯ */
 .tab-content {
     padding:10px;
     border-left:1px solid #DDD;
