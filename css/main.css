@@ -1,4 +1,4 @@
-@font-face {
+/*@font-face {
     font-family: 'Splatoon2';
     src: url('fonts/splatoon2-font/splatoon2-webfont.ttf') format('truetype'),
         url('fonts/splatoon2-font/splatoon2-webfont.svg') format('svg'),
@@ -6,7 +6,7 @@
         url('fonts/splatoon2-font/splatoon2-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-}
+}*/
 
 /* Fixes carousel size on large screens */
 @media (min-width: 992px) {
@@ -63,12 +63,12 @@
 /* Not sure why increasing font size makes the jumbotron larger */
 .jumbotron h1{
     color: #EFF66E;
-    font-family: Splatoon2, sans-serif;
+    font-family: 'splatoon2regular', Helvetica, sans-serif;
     text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000;
 }
 .jumbotron p{
     color: #EFF66E;
-    font-family: Splatoon2, sans-serif;
+    font-family: 'splatoon2regular', Helvetica, sans-serif;
     text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000;
 }
 
