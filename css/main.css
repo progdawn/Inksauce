@@ -1,3 +1,13 @@
+@font-face {
+    font-family: 'Splatoon2';
+    src: url('fonts/splatoon2-font/splatoon2-webfont.ttf') format('truetype'),
+        url('fonts/splatoon2-font/splatoon2-webfont.svg') format('svg'),
+        url('fonts/splatoon2-font/splatoon2-webfont.eot') format('eot'),
+        url('fonts/splatoon2-font/splatoon2-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* Fixes carousel size on large screens */
 @media (min-width: 992px) {
     .carousel-item {
@@ -10,29 +20,55 @@
     }
 }
 
-/* Sets background image for jumbotron */
+/* Sets background image for gear jumbotron */
 #gear-jumbotron.jumbotron{
-    background: url("../images/other/gear-1.jpg")
+    background: url("../images/jumbotron/gear-jumbo-3.jpg")
+            center center;
+    background-size: cover;
+}
+/* Sets background image for brands jumbotron */
+#brands-jumbotron.jumbotron{
+    background: url("../images/jumbotron/brands-jumbo-1.jpg")
             center center;
     background-size: cover;
 }
 
-/* Fixed background image position on large screens */
-/* Why the hell are my wildcard selectors not working? */
-@media (min-width: 992px) {
-    header#gear-jumbotron.jumbotron{        
-        background-position: 50% 30%;
-    }
+/* Changed image size so these aren't necessary. Saving them just in case */
+/*@media (max-width: 575px) { 
+    #gear-jumbotron.jumbotron{
+        background-size: 350%;
+        background-position: 50% 45%;
+    }    
 }
+@media (max-width: 767px) {
+    #gear-jumbotron.jumbotron{
+        background-size: 300%;
+        background-position: 30% 45%;
+    } 
+}
+@media (max-width: 991px) { 
+    #gear-jumbotron.jumbotron{
+        background-size: 180%;
+        background-position: 100% 50%;
+    } 
+}
+@media (max-width: 1199px) { 
+    #gear-jumbotron.jumbotron{
+        background-size: 150%;
+        background-position: 0% 50%;
+    } 
+}*/
 
 /* Sets jumbotron color and stroke */
 /* Not sure why increasing font size makes the jumbotron larger */
 .jumbotron h1{
-    color: #FFFFFF;
+    color: #EFF66E;
+    font-family: Splatoon2, sans-serif;
     text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000;
 }
 .jumbotron p{
-    color: #FFFFFF;
+    color: #EFF66E;
+    font-family: Splatoon2, sans-serif;
     text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000;
 }
 
