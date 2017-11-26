@@ -32,6 +32,12 @@
             center center;
     background-size: cover;
 }
+/* Sets background image for abilities jumbotron */
+#abilities-jumbotron.jumbotron{
+    background: url("../images/jumbotron/abilities-jumbo-2.jpg")
+            center center;
+    background-size: cover;
+}
 
 /* Changed image size so these aren't necessary. Saving them just in case */
 /*@media (max-width: 575px) { 
