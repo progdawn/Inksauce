@@ -44,6 +44,11 @@
             center center;
     background-size: cover;
 }
+#placeholder-jumbotron.jumbotron{
+    background: url("../images/jumbotron/placeholder-jumbo-2.jpg")
+            center center;
+    background-size: cover;
+}
 
 /* Changed image size so these aren't necessary. Saving them just in case */
 /*@media (max-width: 575px) { 
