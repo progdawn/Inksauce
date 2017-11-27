@@ -22,19 +22,25 @@
 
 /* Sets background image for gear jumbotron */
 #gear-jumbotron.jumbotron{
-    background: url("../images/jumbotron/gear-jumbo-3.jpg")
+    background: url("../images/jumbotron/gear-jumbo-4.jpg")
             center center;
     background-size: cover;
 }
 /* Sets background image for brands jumbotron */
 #brands-jumbotron.jumbotron{
-    background: url("../images/jumbotron/brands-jumbo-1.jpg")
+    background: url("../images/jumbotron/brands-jumbo-1-min.jpg")
             center center;
     background-size: cover;
 }
 /* Sets background image for abilities jumbotron */
 #abilities-jumbotron.jumbotron{
-    background: url("../images/jumbotron/abilities-jumbo-2.jpg")
+    background: url("../images/jumbotron/abilities-jumbo-2-min.jpg")
+            center center;
+    background-size: cover;
+}
+/* Sets background image for weapons jumbotron */
+#weapons-jumbotron.jumbotron{
+    background: url("../images/jumbotron/weapons-jumbo-1-min.jpg")
             center center;
     background-size: cover;
 }
