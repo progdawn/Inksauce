@@ -1,7 +1,8 @@
+//Carousel speed
 $('.carousel').carousel({
     interval: 2000
 })
-
+//Initialize Brands datatable
 $(document).ready(function (){
     $('#brandstable').DataTable({
         "responsive": true,
@@ -12,7 +13,7 @@ $(document).ready(function (){
         } ]
     });
 });
-
+//Initialize Abilities datatable
 $(document).ready(function (){
     $('#abilitiestable').DataTable({
         "responsive": true,
@@ -23,7 +24,7 @@ $(document).ready(function (){
         } ]
     });
 });
-
+//Initialize Gear and Weapons datatables
 $(document).ready(function (){
     $('.tab-pane table').DataTable({
         "responsive": true,
@@ -39,6 +40,14 @@ $(document).ready(function (){
             .responsive.recalc();
     }); 
 });
+//Allow overall search for all tabbed tables
+$(document).ready( function () {
+    var tabbedTables = $('.tab-pane table').DataTable();
+    $('#search-all').on('keyup', function () {
+        tabbedTables.search( this.value ).draw();   
+    });
+} );
+//Handle resizing Gallery pictures
 (function ($) {
     var $container = $('.grid'),
         colWidth = function () {
