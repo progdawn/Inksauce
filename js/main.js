@@ -85,23 +85,3 @@ $('.grid').isotope({
         columnWidth: 100
     }
 });
-// init Isotope after all images have loaded
-/*var $grid = $('.grid').imagesLoaded( function() {
-  $grid.isotope({
-    itemSelector: '.grid-item',
-    percentPosition: true,
-    masonry: {
-      columnWidth: '.grid-sizer'
-    }
-  });
-});*/
-
-/*$('.grid').masonry({
-    itemSelector: '.grid-item',
-    columnWidth: 200
-});
-
-// layout Masonry after each image loads
-$grid.imagesLoaded().progress( function() {
-    $grid.masonry();
-}); */ 

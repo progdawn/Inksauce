@@ -40,43 +40,17 @@
     background-size: cover;
 }
 
-/* Changed image size so these aren't necessary. Saving them just in case */
-/*@media (max-width: 575px) { 
-#gear-jumbotron.jumbotron{
-background-size: 350%;
-background-position: 50% 45%;
-}    
-}
-@media (max-width: 767px) {
-#gear-jumbotron.jumbotron{
-background-size: 300%;
-background-position: 30% 45%;
-} 
-}
-@media (max-width: 991px) { 
-#gear-jumbotron.jumbotron{
-background-size: 180%;
-background-position: 100% 50%;
-} 
-}
-@media (max-width: 1199px) { 
-#gear-jumbotron.jumbotron{
-background-size: 150%;
-background-position: 0% 50%;
-} 
-}*/
-
 /* Sets jumbotron color and stroke */
 /* Not sure why increasing font size makes the jumbotron larger */
 .jumbotron h1{
     color: #FDFF00;
     font-family: 'splatoon2regular', Helvetica, sans-serif;
-    text-shadow: -2px 0 #000000, 0 2px #000000, 2px 0 #000000, 0 -2px #000000;
+    text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000;
 }
 .jumbotron p{
     color: #FDFF00;
     font-family: 'splatoon2regular', Helvetica, sans-serif;
-    text-shadow: -2px 0 #000000, 0 2px #000000, 2px 0 #000000, 0 -2px #000000;
+    text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000;
 }
 
 /* Sets button text when clicked. Should combine these later */
@@ -94,32 +68,6 @@ background-position: 0% 50%;
 }
 
 /*Isotope stuff*/
-/*.grid {
-background: #DDD;
-}*/
-
-/* clear fix */
-/*.grid:after {
-content: '';
-display: block;
-clear: both;
-}*/
-
-/* ---- .grid-item ---- */
-
-/*.grid-sizer,
-.grid-item {
-width: 33.333%;
-}
-
-.grid-item {
-float: left;
-}
-
-.grid-item img {
-display: block;
-max-width: 100%;
-}*/
 .isotope .isotope-item {
     -webkit-transition-duration: 0.8s;
     -moz-transition-duration: 0.8s;
@@ -133,26 +81,6 @@ max-width: 100%;
     background-color: white;
     float: left;
 }
-/* Used for Masonry */
-/*.grid {
-background: #DDD;
-}
-.grid:after {
-content: '';
-display: block;
-clear: both;
-}
-.grid-sizer, 
-.grid-item {
-width: 33.333%;
-}
-.grid-item {
-float: left;
-}
-.grid-item img {
-display: block;
-max-width: 100%;
-}*/
 
 /* I forgot why this is here ¯\_(ツ)_/¯ */
 .tab-content {
