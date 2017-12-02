@@ -39,6 +39,7 @@ $(document).ready(function (){
             .columns.adjust()
             .responsive.recalc();
     }); 
+    $('.nosort').removeClass('sorting_asc');
 });
 //Allow overall search for all tabbed tables
 $(document).ready( function () {
