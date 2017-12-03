@@ -69,6 +69,10 @@
     border-style: none;
     padding: 0;
 }
+#specials-table td.collapse-row {
+    border-style: none;
+    padding: 0;
+}
 
 /*Isotope stuff*/
 .isotope .isotope-item {
