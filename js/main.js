@@ -2,6 +2,23 @@
 $('.carousel').carousel({
     interval: 2000
 })
+//Subs collapse stuff
+$(document).ready(function () {
+    $('.collapse')
+        .on('shown.bs.collapse', function(event) {
+        event.stopPropagation();
+        $(this)
+            .parent().parent()
+            .find(".collapse-row")
+            .css({"padding-bottom":"6px"});
+    }).on('hidden.bs.collapse', function(event) {
+        event.stopPropagation();
+        $(this)
+            .parent().parent()
+            .find(".collapse-row")
+            .css({"padding-bottom":"0", "border":"none"});
+    });
+});      
 //Initialize Brands datatable
 $(document).ready(function (){
     $('#brandstable').DataTable({

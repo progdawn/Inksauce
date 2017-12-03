@@ -39,7 +39,6 @@
         center center;
     background-size: cover;
 }
-
 /* Sets jumbotron color and stroke */
 /* Not sure why increasing font size makes the jumbotron larger */
 .jumbotron h1{
@@ -55,16 +54,20 @@
 
 /* Sets button text when clicked. Should combine these later */
 #specials-table .btn-primary:before {
-    content:'Click for details'
+    content:'Click for details';
 }
 #specials-table .btn-primary[aria-expanded="true"]:before {
     content:'Close Details';
 }
 #subs-table .btn-primary:before {
-    content:'Click for details'
+    content:'Click for details';
 }
 #subs-table .btn-primary[aria-expanded="true"]:before {
     content:'Close Details';
+}
+#subs-table td.collapse-row {
+    border-style: none;
+    padding: 0;
 }
 
 /*Isotope stuff*/
