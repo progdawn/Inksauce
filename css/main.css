@@ -74,21 +74,99 @@
     border-style: none;
     padding: 0;
 }
+/* Masonry stuff */
+.grid {
+  background: #EEE;
+  max-width: 1200px;
+}
+
+/* clearfix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- grid-item ---- */
+
+.grid-sizer,
+.grid-item {
+  width: 20%;
+}
+
+.grid-item {
+  height: 120px;
+  float: left;
+  background: #D26;
+  border: 2px solid #333;
+  border-color: hsla(0, 0%, 0%, 0.5);
+  border-radius: 5px;
+}
+
+.grid-item--width2 { width:  40%; }
+.grid-item--width3 { width:  60%; }
+
+.grid-item--height2 { height: 200px; }
+.grid-item--height3 { height: 260px; }
+.grid-item--height4 { height: 360px; }
+/*.item {
+    width: 200px;
+    float: left;
+}
+.item img {
+    display: block;
+    width: 100%;
+}
+.item {
+  background: #0D8;
+  border: 1px solid #333;
+  border-color: hsla(0, 0%, 0%, 0.7);
+}
+#images:after {
+  content: '';
+  display: block;
+  clear: both;
+}*/
+
 
 /*Isotope stuff*/
-.isotope .isotope-item {
+/*.isotope .isotope-item {
     -webkit-transition-duration: 0.8s;
     -moz-transition-duration: 0.8s;
     transition-duration: 0.8s;
     -webkit-transition-property: -webkit-transform, opacity;
     -moz-transition-property: -moz-transform, opacity;
     transition-property: transform, opacity;
+}*/
+/*.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}*/
+/* 5 columns, percentage width */
+/*.grid-sizer, .grid-item {
+  width: 20%;
+}*/
+
+/*.grid-item {
+  float: left;
+   prefer gaps over overlaps 
+  width: calc( 20% - 1px );
+  height: 100px;
+  background: #0D8;
+  border: 1px solid #333;
+  border-color: hsla(0, 0%, 0%, 0.7);
 }
-.item {
+.grid-item--width2 {
+  width: 40%;
+  width: calc( 40% - 1px );
+}
+.grid-item--height2 { height: 200px; }*/
+/*.item {
     width: 20%;
     background-color: white;
     float: left;
-}
+}*/
 
 /* I forgot why this is here ¯\_(ツ)_/¯ */
 .tab-content {

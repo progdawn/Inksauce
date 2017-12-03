@@ -65,8 +65,59 @@ $(document).ready( function () {
         tabbedTables.search( this.value ).draw();   
     });
 } );
+
+// Masonry stuff
+var $grid = $('.grid').masonry({
+    itemSelector: '.grid-item',
+    columnWidth: '.grid-sizer',
+    percentPosition: true
+});
+// layout Masonry after each image loads
+$grid.imagesLoaded().progress( function() {
+    $grid.masonry('layout');
+});
+
+/*$('.grid').masonry({
+  itemSelector: '.grid-item',
+  columnWidth: '.grid-sizer',
+  percentPosition: true
+});*/
+
+
+
+/*$(function () {
+
+    var $container = $('.grid-sizer').masonry({
+        itemSelector: '.grid-item',
+        columnWidth: 200,
+        percentPosition: true
+    });
+
+    // reveal initial images
+    $container.masonryImagesReveal($('.grid').find('.item'));
+});
+
+$.fn.masonryImagesReveal = function ($items) {
+    var msnry = this.data('masonry');
+    var itemSelector = msnry.options.itemSelector;
+    // hide by default
+    $items.hide();
+    // append to container
+    this.append($items);
+    $items.imagesLoaded().progress(function (imgLoad, image) {
+        // get item
+        // image is imagesLoaded class, not <img>, <img> is image.img
+        var $item = $(image.img).parents(itemSelector);
+        // un-hide item
+        $item.show();
+        // masonry does its thing
+        msnry.appended($item);
+    });
+
+    return this;
+};*/
 //Handle resizing Gallery pictures
-(function ($) {
+/*(function ($) {
     var $container = $('.grid'),
         colWidth = function () {
             var w = $container.width(), 
@@ -97,7 +148,7 @@ $(document).ready( function () {
         },
         isotope = function () {
             $container.isotope({
-                itemSelector: '.item',
+                itemSelector: '.grid-item',
                 masonry: {
                     columnWidth: colWidth()
                 }
@@ -105,10 +156,14 @@ $(document).ready( function () {
         };
     isotope();
     $(window).on('debouncedresize', isotope);
-}(jQuery));
-$('.grid').isotope({
-    itemSelector: '.item',
+}(jQuery));*/
+/*$(document).ready( function() {
+
+  $('.grid').isotope({
+    itemSelector: '.grid-item',
+    percentPosition: true,
     masonry: {
-        columnWidth: 100
+      columnWidth: '.grid-sizer'
     }
-});
+  });
+});*/
