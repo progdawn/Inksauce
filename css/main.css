@@ -52,7 +52,7 @@
     text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000;
 }
 
-/* Sets button text when clicked. Should combine these later */
+/* Sets button text when clicked. Should combine these later with wildcards */
 #specials-table .btn-primary:before {
     content:'Click for details';
 }
@@ -65,6 +65,7 @@
 #subs-table .btn-primary[aria-expanded="true"]:before {
     content:'Close Details';
 }
+/* More Subs/Specials stuff */
 #subs-table td.collapse-row {
     border-style: none;
     padding: 0;
