@@ -76,7 +76,6 @@ var $grid = $('.grid').masonry({
 $grid.imagesLoaded().progress( function() {
     $grid.masonry('layout');
 });
-
 /*$('.grid').masonry({
   itemSelector: '.grid-item',
   columnWidth: '.grid-sizer',
