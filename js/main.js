@@ -1,8 +1,16 @@
+//---- Carousel ----
+
+
 //Carousel speed
 $('.carousel').carousel({
     interval: 2000
 })
-//Subs collapse stuff
+
+
+//---- Subs and Specials ----
+
+
+//Subs collapse
 $(document).ready(function () {
     $('.collapse')
         .on('shown.bs.collapse', function(event) {
@@ -18,7 +26,12 @@ $(document).ready(function () {
             .find(".collapse-row")
             .css({"padding-bottom":"0", "border":"none"});
     });
-});      
+});    
+
+
+//---- Brands ----
+
+
 //Initialize Brands datatable
 $(document).ready(function (){
     $('#brandstable').DataTable({
@@ -30,6 +43,11 @@ $(document).ready(function (){
         } ]
     });
 });
+
+
+//---- Abilities ----
+
+
 //Initialize Abilities datatable
 $(document).ready(function (){
     $('#abilitiestable').DataTable({
@@ -41,6 +59,11 @@ $(document).ready(function (){
         } ]
     });
 });
+
+
+//---- Gear and Weapons ----
+
+
 //Initialize Gear and Weapons datatables
 $(document).ready(function (){
     $('.tab-pane table').DataTable({
@@ -65,13 +88,17 @@ $(document).ready( function () {
         tabbedTables.search( this.value ).draw();   
     });
 } );
-// Masonry stuff
+
+
+//---- Gallery ----
+
+
 var $grid = $('.grid').masonry({
     itemSelector: '.grid-item',
     columnWidth: '.grid-sizer',
     percentPosition: true
 });
-// layout Masonry after each image loads
+//Layout Masonry after each image loads
 $grid.imagesLoaded().progress( function() {
     $grid.masonry('layout');
 });
