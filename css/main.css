@@ -115,6 +115,34 @@
 .grid-item--height3 { height: 260px; }
 .grid-item--height4 { height: 360px; }
 
+@media only screen and (max-width: 575px) {
+    .grid-sizer, .grid-item {
+        width: 100%
+    }
+}
+
+@media (min-width: 576px) {
+    .grid-sizer, .grid-item {
+        width: 100%
+    }
+}
+
+@media (min-width: 768px){
+    .grid-sizer, .grid-item {
+        width: 50%
+    }
+}
+@media (min-width: 992px){
+    .grid-sizer, .grid-item {
+        width: 33%
+    }
+}
+@media (min-width: 1200px) {
+    .grid-sizer, .grid-item {
+        width: 20%
+    }
+}
+
 
 /*---- Gear and Weapons ----*/
 
