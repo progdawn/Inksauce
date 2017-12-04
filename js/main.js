@@ -68,7 +68,9 @@ $(document).ready(function (){
 $(document).ready(function (){
     $('.tab-pane table').DataTable({
         "responsive": true,
-        "paging":   false,
+        "paging":   true,
+        "pageLength": 30,
+        "deferRender": true,
         "columnDefs": [ {
             "targets": 'nosort',
             "orderable": false
