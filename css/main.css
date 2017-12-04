@@ -153,3 +153,7 @@
     border-bottom:1px solid #DDD;
     border-right:1px solid #DDD;
 }
+/* Hold on to your butts, we're going up the DOM */
+.container-fluid.dt-bootstrap4.no-footer div.row div.col-sm-12.col-md-6 .dataTables_filter {
+    display: none;
+}
