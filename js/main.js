@@ -75,9 +75,10 @@ $(document).ready(function (){
         } ]
     });
     $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
-        $($.fn.dataTable.tables({visible: true, api: true} )).DataTable()
+        $($.fn.dataTable.tables({visible: true, api: true, "deferRender": true} )).DataTable()
             .columns.adjust()
             .responsive.recalc();
+        
     }); 
     $('.nosort').removeClass('sorting_asc');
 });
