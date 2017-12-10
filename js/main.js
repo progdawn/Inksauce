@@ -90,6 +90,7 @@ $(document).ready( function () {
     $('#search-all').on('keyup', function () {
         tabbedTables.search( this.value ).draw();   
     });
+    tabbedTables.css({"width"="100%"});
 } );
 
 
@@ -125,10 +126,7 @@ $(document).ready( function () {
         loading: {
             finishedMsg: 'No more pages to load.'
         }
-    },
-
-                              // Trigger Masonry as a callback
-                              function( newElements ) {
+    }, function( newElements ) {
         // hide new items while they are loading
         var $newElems = $( newElements ).css({ opacity: 0 });
         // ensure that images load before adding to masonry layout

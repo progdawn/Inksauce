@@ -71,15 +71,28 @@
                                 <input type="text" class="form-control" id="search-all" placeholder="Search">
                             </div>
                         </form>
-                        <nav class="nav nav-tabs" id="myTab" role="tablist">
-                            <a class="nav-item nav-link active" id="nav-headgear-tab" data-toggle="tab" href="#nav-headgear" aria-controls="nav-headgear" aria-selected="true">Headgear</a>
-                            <a class="nav-item nav-link" id="nav-clothes-tab" data-toggle="tab" href="#nav-clothes" role="tab" aria-controls="nav-clothes" aria-selected="false">Clothes</a>
-                            <a class="nav-item nav-link" id="nav-shoes-tab" data-toggle="tab" href="#nav-shoes" role="tab" aria-controls="nav-shoes" aria-selected="false">Shoes</a>
-                        </nav>
+                        <!--
+<nav class="nav nav-tabs" id="myTab">
+<a class="nav-item nav-link active" id="nav-headgear-tab" data-toggle="tab" href="#nav-headgear" aria-controls="nav-headgear" aria-selected="true" role="tab">Headgear</a>
+<a class="nav-item nav-link" id="nav-clothes-tab" data-toggle="tab" href="#nav-clothes" role="tab" aria-controls="nav-clothes" aria-selected="false">Clothes</a>
+<a class="nav-item nav-link" id="nav-shoes-tab" data-toggle="tab" href="#nav-shoes" role="tab" aria-controls="nav-shoes" aria-selected="false">Shoes</a>
+</nav>
+-->
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="nav-headgear-tab" data-toggle="tab" href="#nav-headgear" role="tab" aria-controls="nav-headgear" aria-selected="true">Headgear</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="nav-clothes-tab" data-toggle="tab" href="#nav-clothes" role="tab" aria-controls="nav-clothes" aria-selected="false">Clothes</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="nav-shoes-tab" data-toggle="tab" href="#nav-shoes" role="tab" aria-controls="nav-shoes" aria-selected="false">Shoes</a>
+                            </li>
+                        </ul>
 
                         <div class="tab-content" id="gear-content">
                             <div class="tab-pane fade show active" id="nav-headgear" role="tabpanel" aria-labelledby="nav-headgear-tab">
-                                <table class="table table-striped table-bordered dt-responsive nowrap" width="100%" cellspacing="0" id="headgear-table">
+                                <table class="table table-striped table-bordered dt-responsive nowrap" id="headgear-table">
                                     <thead class="thead-default">
                                         <tr>
                                             <th class="min-phone-l nosort">Image</th>
@@ -522,7 +535,7 @@
                             </div>
 
                             <div class="tab-pane fade" id="nav-clothes" role="tabpanel" aria-labelledby="nav-clothes-tab">
-                                <table class="table table-striped table-bordered dt-responsive nowrap" width="100%" cellspacing="0" id="clothes-table">
+                                <table class="table table-striped table-bordered dt-responsive nowrap" id="clothes-table">
                                     <thead class="thead-default">
                                         <tr>
                                             <th class="min-phone-l nosort">Image</th>
@@ -1308,7 +1321,7 @@
                             </div>
 
                             <div class="tab-pane fade" id="nav-shoes" role="tabpanel" aria-labelledby="nav-shoes-tab">
-                                <table class="table table-striped table-bordered dt-responsive nowrap" width="100%" cellspacing="0" id="shoes-table">
+                                <table class="table table-striped table-bordered dt-responsive nowrap" id="shoes-table">
                                     <thead class="thead-default">
                                         <tr>
                                             <th class="min-phone-l nosort">Image</th>
