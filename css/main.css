@@ -41,8 +41,21 @@
         center center;
     background-size: cover;
 }
-#placeholder-jumbotron.jumbotron{
-    background: url("../images/jumbotron/placeholder-jumbo-2.jpg")
+/* Sets background image for gallery jumbotron */
+#gallery-jumbotron.jumbotron{
+    background: url("../images/jumbotron/gallery-jumbo-1.jpg")
+        center center;
+    background-size: cover;
+}
+/* Sets background image for gallery jumbotron */
+#sub-jumbotron.jumbotron{
+    background: url("../images/jumbotron/sub-jumbo-1.jpg")
+        center center;
+    background-size: cover;
+}
+/* Sets background image for gallery jumbotron */
+#specials-jumbotron.jumbotron{
+    background: url("../images/jumbotron/specials-jumbo-1.jpg")
         center center;
     background-size: cover;
 }
