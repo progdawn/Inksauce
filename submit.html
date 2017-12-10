@@ -74,8 +74,7 @@
 
                     <div class="col-md-6 order-2">
                         <div class="p-5">
-                            <form class="container pure-form pure-form-stacked" id="gform" method="POST" data-email="example@email.net"
-                                  action="https://script.google.com/a/gmatc.matc.edu/macros/s/AKfycbyq_8mikcy2wcOE-NRS_f8eXLEU68p6mOzdufxzoXOgyBzeu4A/exec">
+                            <form class="container" id="submit-pic-form" method="POST" action="submit-form.php">
                                 <div class="form-group">
                                     <label for="name">Name</label>
                                     <input type="text" class="form-control" id="name" name="name" aria-describedby="name-help" placeholder="Enter name">
@@ -95,13 +94,8 @@
                                     <label for="description">Describe the image</label>
                                     <textarea class="form-control" id="description" name="description" rows="3"></textarea>
                                 </div>
-                                <!--                            <button type="submit" class="btn btn-primary">Submit</button>-->
-                                <button class="btn btn-primary">
-                                    <i class="fa fa-paper-plane"></i> Send</button>
+                                <input type="submit" id="submit" name="submit" value="submit" class="btn btn-primary" />
                             </form>
-                            <div style="display:none;" id="thankyou_message">
-                                <h2>Thanks for the pic! I'll check it out soon!</h2>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -111,9 +105,7 @@
         <script src="js/jquery-3.2.1.min.js"></script>
         <script src="js/popper.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
-        <!-- Submit the Form to Google Using "AJAX" -->
-        <script data-cfasync="false" type="text/javascript"
-                src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
         <script src="js/main.js"></script>
+        <script src="js/jq-post.js"></script>
     </body>
 </html>

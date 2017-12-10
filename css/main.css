@@ -184,3 +184,16 @@
 .container-fluid.dt-bootstrap4.no-footer div.row div.col-sm-12.col-md-6 .dataTables_length {
     display: none;
 }
+
+
+/*---- Submit ---- */
+.php-underline {
+    text-decoration: underline;
+}
+.php-quotes:before{
+    content: open-quote;
+}
+.php-quotes:after{
+    content: close-quote;
+}
+
