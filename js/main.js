@@ -83,6 +83,7 @@ $(document).ready(function (){
 
     }); 
     $('.nosort').removeClass('sorting_asc');
+    $('.tab-pane table').css('width', '100%');
 });
 //Allow overall search for all tabbed tables
 $(document).ready( function () {
@@ -90,8 +91,7 @@ $(document).ready( function () {
     $('#search-all').on('keyup', function () {
         tabbedTables.search( this.value ).draw();   
     });
-    tabbedTables.css({"width"="100%"});
-} );
+} )
 
 
 //---- Gallery ----
