@@ -5,6 +5,6 @@ This is the final project for my VICOM 128 and ITDEV 161 classes. Working off of
 
 Initially I will be meeting the requirements for the Visual Communications 128 class, "Web Development with HTML/CSS". Once that is complete, I will be adding in material to meet the IT Development 161 class, "Web Programming 1". This will include Angular, AJAX, and PHP.
 
-Check out the plain ol' site here: [progdawn.github.io](progdawn.github.io)
+Check out the plain ol' site here: [progdawn.github.io](https://progdawn.github.io/)
 
 GitHub hosted sites don't use anything beyond HTML, CSS, and JS, so some functionality will be missing.
