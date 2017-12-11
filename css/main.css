@@ -186,7 +186,7 @@
 }
 
 
-/*---- Submit ---- */
+/*---- Submit ----*/
 .php-underline {
     text-decoration: underline;
 }
@@ -197,3 +197,32 @@
     content: close-quote;
 }
 
+
+div.col-md-6.order-1 .drops {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: -1;
+  top: 0px;
+  left: 40px;
+  width: 15px;
+  height: 15px;
+  background: #6BFF00;
+  border-radius: 50px;
+  transition: 0.2s;
+} 
+ .drops {
+  animation: ooze-drop 1.5s infinite;
+    y-transition: all 1s ease-in-out;
+}
+@keyframes ooze-drop {
+  0% {
+    transform: translateY(-50px);
+  }
+    50% {
+        transform: translateY(200px);
+    }
+  100% {
+    transform: translateY(-50px);
+  }
+}
