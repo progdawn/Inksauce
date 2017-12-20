@@ -8,3 +8,5 @@ Initially I will be meeting the requirements for the Visual Communications 128 c
 Check out the plain ol' site here: [progdawn.github.io](https://progdawn.github.io/)
 
 GitHub hosted sites don't use anything beyond HTML, CSS, and JS, so some functionality will be missing.
+
+Here's the ITDEV161 version of the site: [inksauce-angular](https://github.com/progdawn/inksauce-angular)
